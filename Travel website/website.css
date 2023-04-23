@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(/image/banner.png);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(image/banner.png);
     background-size: cover;
     background-position: center;
 }
@@ -78,4 +78,58 @@ nav{
 .search-bar form button img{
     width: 15px;
     margin-top: 7px;
+}
+.location-input{
+    flex: 1; /*uses all the space in the row so that no extra space is left */
+}
+.search-bar form label{
+    font-weight: 600;
+}
+
+/* ---------------------EXCLUSIVES--------------------*/
+
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));  /* Watch grid layout video of Easy tutorials for doubt clearing later if needed */
+    grid-gap: 30px;
+}
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.exclusives div{
+    position: relative;
+}
+.exclusives div span{              /*makes the text appear inside the image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-decoration: solid;
+    cursor: pointer;
+}
+/* ----------------------- Trending Places ------------------ */
+
+.trending{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+.trending div img{
+    width: 100%;
+    border-radius: 10px;
+}
+.trending h3{
+    font-weight: 600;
+    margin-top: 10px;
 }
