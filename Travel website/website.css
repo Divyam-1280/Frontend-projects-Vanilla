@@ -217,3 +217,125 @@ nav{
     margin-bottom: 30px;
     font-weight: 500;
 }
+
+
+/* -------------------- footer ------------------------ */
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.footer hr{
+   width: 25%;
+   padding-left: auto;
+   margin-left: auto;
+   padding-right: auto;
+   margin-right: auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   height: 1px;
+   background: grey;
+}
+.footer p{
+    padding-bottom: 15px;
+}
+
+.active{
+    position: relative;
+}
+.active::after{                   /*adds the small line below the popular places navigation bar text when it is currently clicked and active right now*/
+    content: '';
+    background: white;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+/* ---------------------Learn CSS media queries and update this one soon, making it more responsive---------------------- */
+
+
+/* ---------------------- Page 2(listing) from here --------------------------------- */
+
+.navbar-white{
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);           /*adds that very subtle shadow beneath the navbar*/
+}
+.navbar-white .nav-links li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-white .register-btn{
+    background: #ff5361;
+    color: white;
+}    
+.navbar-white .active::after{ /* to change the color of the small bar which is below the nav tag that is currently active */
+    background: #ff5361;
+}
+.list-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-col{
+    flex-basis: 70%;
+}
+.right-col{
+    flex-basis: 25%;
+}
+.left-col h1{
+    color:#333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid grey; /* this also adds that line above the image of the house (below the recommended place heading) */
+}
+.house-img{
+    flex-basis: 40%;          /* this is also a way to control width*/
+}
+.house-info{
+    flex-basis: 58%; /* the rest of 2% will be used as space between both the columns*/
+    color: #555;
+}
+.house-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+.house-info h3{
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+.house-info i{
+    color: #ff5361;
+    font-size: 18px;
+    margin: 10px 1px;
+}
+.house-price{
+    text-align: right;
+}
+.house-price h4{
+    font-size: 20px;
+}
+.house-price h4 span{
+    font-size: 16px;
+    font-weight: 500;
+}
