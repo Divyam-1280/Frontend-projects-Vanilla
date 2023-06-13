@@ -93,6 +93,7 @@ nav{
     padding: 20px;
     border-radius: 4px;
     color: #626262;
+    width: 35%;
 }
 .main-content{
     flex-basis: 47%;
@@ -187,6 +188,7 @@ i{
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    gap: 1.25rem;
 }
 .online-list .online img{
     width: 40px;
@@ -199,4 +201,9 @@ i{
 }
 .para{
     display: flex;
+}
+
+.online-list-items {
+	display: flex;
+	align-items: center;
 }
