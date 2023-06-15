@@ -23,8 +23,50 @@
                 <img src="./images/search.png" >
                 <input type="text" placeholder="Search">
             </div>
-            <div class="nav-user-icon online">
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()"> <!--This onclick feature calls a function when it is clicked upon-->
                 <img src="./images/profile-pic.png">
+            </div>
+        </div>
+        <!-------------------Writing the settings menu now----------------->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>John Hitler</p>
+                        <a href="#">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -214,6 +256,7 @@
                     </div>
                 </div>
             </div>
+            <button type="button" class="load-more-btn">Load More</button>
         </div>
         <!-------------------Right sidebar---------------------------------->
         <div class="right-sidebar">
@@ -268,5 +311,9 @@
             </div>
         </div>
     </div>
+    <div class="footer">
+        <p>Copright 2023 - Divyam Raj Singh</p>
+    </div>
+    <script src="web.js"></script>
 </body>
 </html>
