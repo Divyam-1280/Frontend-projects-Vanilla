@@ -14,3 +14,5 @@ formbtn.addEventListener('click', () =>{
 formclose.addEventListener('click', () =>{
     loginform.classList.remove('active');
 });
+
+//TIMELINE ANIMATION JS FOR SCROLL
