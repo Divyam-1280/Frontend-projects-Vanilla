@@ -643,7 +643,7 @@ nav a.active{
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(255,215,0,0.5);
     font-size: 70px;
-    color: #ffc700; /* Golden color */
+    color: #ffc700;
     font-family: "Helvetica Neue", Arial, sans-serif; 
     text-align: center;
     letter-spacing: 2px;
@@ -652,7 +652,7 @@ nav a.active{
 /* About section */
 
 .about{
-    height: 100vh;
+    height: 200vh;
     overflow: hidden;
     width: 100%;
     background: linear-gradient(to bottom right, rgb(209, 179, 15), #ffee00, rgb(209, 179, 15), #ffee00, rgb(209, 179, 15),#ffee00);
@@ -661,6 +661,12 @@ nav a.active{
     backdrop-filter: blur(10px);
     border: 7px solid #000;
     box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.first-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
 }
 .about h3{
     position: relative;
@@ -671,92 +677,81 @@ nav a.active{
     color: #000000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.card-image{
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: #FFF;
-    padding: 3px;
-}
-.card-image .card-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    
-    border: 4px solid #4070f4;
-}
-.slide-container{
-    margin-top: 100px;
-    max-width: 1120px;
-    width: 100%;
-    background-color: gray;
-    padding: 20px 0;
-}
-.cardd{
-    border-radius: 25px;
-    background-color: #fff;
-    width: 320px;
-}
-.slide-content{
-    margin: 0 40px;
-}
-.image-content, .card-content{
-    padding: 10px 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.image-content{
-    position: relative;
-    row-gap: 5px;
-    padding: 25px 0;
-}
-.overlay{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #4070f4;
-    top: 0;
-    left: 0;
-    border-radius: 25px 25px 0 25px;
-}
-.overlay::before, .overlay::after{
-    content: '';
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    right: 0;
-    background-color: #4070f4;
-    bottom: -40px;
-}
-.overlay::after{
-    border-radius: 0 25px 0 0;
-    background-color: #fff;
-}
-.name{
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
-}
-.description{
-    font-size: 14px;
-    color: #707070;
-    text-align: center;
-}
-.button{
-    background: transparent;
-    border: none;
-    margin-top: 10px;
-}
-.button i{
-    font-size: 25px;
-    padding: 8px 16px;
+.about-card{
+    margin-right: 30px;
+    margin-left: 30px;
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all .5s ease;
     cursor: pointer;
-    transition:all 0.3s ease;
 }
-.button i:hover{
-    transform: scale(1.2);
+.about-card img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.about-container{
+    display: flex;
+    justify-content: space-between;
+}
+.intro{
+    height: 70px;
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 900px;
+    border-radius: 10px;
+    background: rgba(27, 27, 27,.5);
+    color: white;
+    transition: all .5s ease;
+}
+.intro h1{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 30px;
+}
+.intro span{
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin: 2px;
+    width: 140px;
+    background: linear-gradient(to bottom right, rgb(209, 179, 15), #ffee00, rgb(209, 179, 15));
+    border: 2px solid black;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1.5 ease-in-out;
+}
+.parent-align{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 0px;
+    transition: all 1.5s ease-in-out;
+}
+.about-card:hover .intro{
+    height: 139px;
+    background: rgba(0, 0, 0, 0.443);
+}
+.about-card:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+.about-card:hover img{
+    transform: scale(1.1);
+}
+.r2{
+    bottom: 500px;
+}
+.r3{
+    bottom: 100px;
 }
