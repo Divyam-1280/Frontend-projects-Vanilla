@@ -344,7 +344,7 @@ nav a.active{
 .achievement{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom right, rgb(187, 161, 13), #ffd000, rgb(187, 161, 13));
+    background: linear-gradient(to bottom right, rgb(187, 161, 13), #ffee00, rgb(187, 161, 13), #ffee00, rgb(187, 161, 13),#ffee00);
     background-repeat: no-repeat;
     background-attachment: fixed;
     backdrop-filter: blur(10px);
@@ -497,7 +497,9 @@ nav a.active{
 
 .activity{
     height: 135vh;
-    background: linear-gradient(135deg, #000000, rgba(0, 0, 0, 0.863), #000000);
+    background: linear-gradient(135deg, #000000, rgba(0, 0, 0, 0.854), #000000, rgba(0, 0, 0, 0.854), #000000,rgba(0, 0, 0, 0.854), #000000,  rgba(0, 0, 0, 0.854), #000000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding-top: 98px;
     display: flex;
     justify-content: space-between;
@@ -527,7 +529,7 @@ nav a.active{
 }
 .text-box{
     padding: 20px 30px;
-    background: gold;
+    background: linear-gradient(to bottom right, rgb(187, 161, 13), #ffd000, rgb(187, 161, 13));
     position: relative;
     border-radius: 6px;
     font-size: 15px;
@@ -554,7 +556,7 @@ nav a.active{
     position: absolute;
     width: 6px;
     height: 666px;
-    background: gold;
+    background: linear-gradient(to bottom right, rgb(187, 161, 13), #ffd000, rgb(187, 161, 13));
     top:0;
     left: 50%;
     margin-left: -3px;
@@ -577,7 +579,7 @@ nav a.active{
     z-index:1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 15px solid gold;
+    border-left: 15px solid #ffd000;
     right: -14px;
 }
 .right-arrow{
@@ -588,7 +590,7 @@ nav a.active{
     z-index:1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid gold;
+    border-right: 15px solid #d6af00;
     left: -14px;
 }
 @media screen and (max-width: 600px){
@@ -617,7 +619,7 @@ nav a.active{
         left: 4px
     }
     .left-arrow, .right-arrow{
-        border-right: 15px solid yellow;
+        border-right: 15px solid #ffd000;
         border-left: 0;
         left: -14px;
     }
@@ -627,7 +629,8 @@ nav a.active{
     width:420px
 }
 .right-section img:nth-child(2){
-    height: 300px;
+    height: 250px;
+    width: 450px;
     margin-top: 80px;
 }
 .heading{
