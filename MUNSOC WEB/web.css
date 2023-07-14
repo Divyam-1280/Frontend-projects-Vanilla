@@ -496,7 +496,7 @@ nav a.active{
 /* activity section */
 
 .activity{
-    height: 135vh;
+    height: 145vh;
     background: linear-gradient(135deg, #000000, rgba(0, 0, 0, 0.854), #000000, rgba(0, 0, 0, 0.854), #000000,rgba(0, 0, 0, 0.854), #000000,  rgba(0, 0, 0, 0.854), #000000);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -688,12 +688,10 @@ nav a.active{
     border: 4px solid #4070f4;
 }
 .slide-container{
-    display: flex;
     margin-top: 100px;
     max-width: 1120px;
     width: 100%;
     background-color: gray;
-    transform: translateX(180px);
     padding: 20px 0;
 }
 .cardd{
