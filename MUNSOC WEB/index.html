@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUNSOC NITA</title>
+
+    <link rel="stylesheet" href="./swiper.css">
+
     <link rel="stylesheet" href="./web.css">
     <script src="https://kit.fontawesome.com/76a5083201.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -145,21 +148,32 @@
 
     <div class="about">
         <div class="headingg"><h3>About Us</h3></div>
-        <div class="slide-container">
+        <div class="slide-container swiper">
             <div class="slide-content">
-                <div class="card-wrapper">
-                    <div class="cardd">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="cardd swiper-slide">
                         <div class="image-content">
                             <span class="overlay">
 
                             </span>
                             <div class="card-image">
-
+                                <img src="./media/DSC_4972.JPG" class="card-img">
                             </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">MUNSOC</h2>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae incidunt sed dolorum minima. Alias, rerum?</p>
+
+                            <button class="button"><i class="fa-brands fa-instagram"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 
@@ -168,5 +182,6 @@
       AOS.init();
     </script>
 </body>
+<script src="./swipper.js"></script>
 <script defer src="./mun.js"></script>
 </html>
