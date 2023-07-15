@@ -212,12 +212,6 @@ nav a.active{
     transition: all .55s ease;
     font-weight: 700;
 }
-.btn:hover{
-    color: rgb(0, 0, 0);
-    background:  rgb(239, 232, 10);
-    box-shadow: 0 0 20px  rgb(239, 232, 10);
-    transform: scale(1.1);
-}
 .login-form-container .btn:hover{
     color: rgb(0, 0, 0);
     background:  rgb(255, 215, 0);
@@ -496,8 +490,8 @@ nav a.active{
 /* activity section */
 
 .activity{
-    height: 145vh;
-    background: linear-gradient(135deg, #000000, rgba(0, 0, 0, 0.854), #000000, rgba(0, 0, 0, 0.854), #000000,rgba(0, 0, 0, 0.854), #000000,  rgba(0, 0, 0, 0.854), #000000);
+    height: 140vh;
+    background: linear-gradient(to bottom right, #000000, rgba(0, 0, 0, 0.854), #000000, rgba(0, 0, 0, 0.854), #000000,rgba(0, 0, 0, 0.854), #000000,  rgba(0, 0, 0, 0.854), #000000);
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding-top: 98px;
@@ -506,6 +500,9 @@ nav a.active{
     padding-left: 20px;
     padding-right: 20px;
     border: solid 7px black;
+}
+.activity{
+    border-bottom: none;
 }
 .timeline{
     background: transparent;
@@ -641,10 +638,9 @@ nav a.active{
     transform: translateY(-95px);
     z-index: 9999;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(255,215,0,0.5);
+    text-shadow: 1px 1px 2px whitesmoke;
     font-size: 70px;
-    color: #ffc700;
-    font-family: "Helvetica Neue", Arial, sans-serif; 
+    color: white; 
     text-align: center;
     letter-spacing: 2px;
 }
@@ -670,8 +666,8 @@ nav a.active{
 }
 .about h3{
     position: relative;
-    margin-left: 38%;
-    padding-top: 8px;
+    margin-left: 40%;
+    padding-top: 41px;
     font-size: 70px;
     font-weight: bold;
     color: #000000;
@@ -704,7 +700,7 @@ nav a.active{
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 900px;
+    bottom: 866px;
     border-radius: 10px;
     background: rgba(27, 27, 27,.5);
     color: white;
@@ -750,8 +746,33 @@ nav a.active{
     transform: scale(1.1);
 }
 .r2{
-    bottom: 500px;
+    bottom: 466px;
 }
 .r3{
-    bottom: 100px;
+    bottom: 66px;
 }
+
+/* Document section starts */
+.document{
+    height: 80vh;
+    background: linear-gradient(to bottom right, #000000, rgba(0, 0, 0, 0.854), #000000, rgba(0, 0, 0, 0.854), #000000,rgba(0, 0, 0, 0.854), #000000,  rgba(0, 0, 0, 0.854), #000000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doc-img{
+    width: 1200px;
+    height: 598px;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+.doc-img img{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+/* Document section ends */
