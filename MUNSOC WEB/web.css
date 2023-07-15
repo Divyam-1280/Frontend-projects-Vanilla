@@ -773,6 +773,69 @@ nav a.active{
     height: 100%;
     z-index: 2;
 }
-
-
+.document-card{
+    height: 70px;
+    width: 220px;
+    background: linear-gradient(to bottom right, rgb(209, 179, 15), #ffee00, rgb(209, 179, 15));
+    z-index: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.document-card:hover{
+    background:  linear-gradient(to bottom right, rgb(214, 214, 214), #ffffff, rgb(214, 214, 214));
+    height: 75px;
+    width: 230px;
+}
+.document-card:hover h3{
+    transform: scale(1.08);
+}
+.doc-top-left{
+    position: absolute;
+    left: 180px;
+    transform: translateY(-180px);
+}
+.document-card h3{
+    padding: 10px;
+    font-weight: bold;
+    transition:all .3s ease-in-out;
+}
+.doc-left{
+    position: absolute;
+    left: 180px;
+    transform: translateY(80px);
+}
+.doc-left h3{
+    font-size: 30px;
+}
+.doc-top-right{
+    position: absolute;
+    transform: translateY(-150px);
+    right:180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doc-top-right h3{
+    margin-left: 15px;
+}
+.doc-right{
+    position: absolute;
+    right: 180px;
+    transform: translateY(80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doc-right h3{
+    margin-left: 15px;
+}
+.document a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
 /* Document section ends */
