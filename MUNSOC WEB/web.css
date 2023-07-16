@@ -644,7 +644,7 @@ nav a.active{
 /* About section */
 
 .about{
-    height: 200vh;
+    height: 300vh;
     overflow: hidden;
     width: 100%;
     background: linear-gradient(to bottom right, rgb(209, 179, 15), #ffee00, rgb(209, 179, 15), #ffee00, rgb(209, 179, 15),#ffee00);
@@ -653,12 +653,13 @@ nav a.active{
     backdrop-filter: blur(10px);
     border: 7px solid #000;
     box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+    border-bottom: none;
 }
 .first-row{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .about h3{
     position: relative;
@@ -696,7 +697,7 @@ nav a.active{
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 866px;
+    bottom: 1487px;
     border-radius: 10px;
     background: rgba(27, 27, 27,.5);
     color: white;
@@ -742,10 +743,10 @@ nav a.active{
     transform: scale(1.1);
 }
 .r2{
-    bottom: 466px;
+    bottom: 987px;
 }
 .r3{
-    bottom: 66px;
+    bottom: 487px;
 }
 
 /* Document section starts */
@@ -835,3 +836,36 @@ nav a.active{
     font-weight: bold;
 }
 /* Document section ends */
+
+/* Contact */
+
+.contact{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 80px;
+    width: 100%;
+    margin-top: 150px;
+}
+.contact h3{
+    font-size: 45px;
+    position: absolute;
+    transform: translateX(-300px);
+}
+.arr-rt{
+    font-size: 45px;
+    position: absolute;
+    right: 550px;
+    transform: translateY(42px);
+}
+.inst{
+    font-size: 45px;
+    position: absolute;
+    right: 450px;
+    transform: translateY(42px);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.inst:hover{
+    font-size: 50px;
+}
