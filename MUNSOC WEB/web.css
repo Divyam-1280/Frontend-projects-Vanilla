@@ -210,9 +210,9 @@ nav a.active{
     cursor: pointer;
     padding: 15px 30px;
     transition: all .55s ease;
-    font-weight: 700;
+    font-weight: 700; 
 }
-.login-form-container .btn:hover{
+.login-form-container .btn:hover, .email-signup .btn:hover{
     color: rgb(0, 0, 0);
     background:  rgb(255, 215, 0);
     box-shadow: 0 0 10px  rgba(255, 215, 0,0.5);
@@ -622,13 +622,9 @@ nav a.active{
     }
 }
 .right-section img{
-    height: 400px;
-    width:420px
-}
-.right-section img:nth-child(2){
-    height: 250px;
-    width: 450px;
-    margin-top: 80px;
+    height: 390px;
+    width: 400px;
+    transform: translateY(150px);
 }
 .heading{
     height: 80px;
@@ -806,14 +802,14 @@ nav a.active{
 .doc-left{
     position: absolute;
     left: 180px;
-    transform: translateY(80px);
+    transform: translateY(40px);
 }
 .doc-left h3{
     font-size: 30px;
 }
 .doc-top-right{
     position: absolute;
-    transform: translateY(-150px);
+    transform: translateY(-185px);
     right:180px;
     display: flex;
     justify-content: center;
@@ -825,7 +821,7 @@ nav a.active{
 .doc-right{
     position: absolute;
     right: 180px;
-    transform: translateY(80px);
+    transform: translateY(40px);
     display: flex;
     justify-content: center;
     align-items: center;
