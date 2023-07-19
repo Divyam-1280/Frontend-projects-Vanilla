@@ -27,3 +27,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Code for Vercel
+
+app.use(express.static(__dirname + "/public/"));
+
