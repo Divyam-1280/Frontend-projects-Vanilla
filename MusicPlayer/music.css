@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    transition: all .5s ease-in-out;
 }
 .container{
     width: 100%;
@@ -47,6 +48,7 @@ nav .circle{
 .music-player p{
     font-size: 14px;
     color: #333;
+    margin-top: 5px;
 }
 #progress{
     -webkit-appearance: none;
@@ -66,4 +68,30 @@ nav .circle{
     border-radius: 50%;
     border: 8px solid #fff;
     box-shadow: 0 5px 5px rgba(225, 26, 26, 0.22);
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #f53192;
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
+}
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #f53192;
+    color: white;
+}
+#ctrlIcon{
+    transition: all .5s ease-in-out;
 }
